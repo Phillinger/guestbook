@@ -20,3 +20,6 @@ This repository helps me learning to code with symfony. Buy the book ("Symfony 5
 `docker-compose ps`
 
 `docker-compose logs`
+
+### Debugger
+`symfony console debug:router`
