@@ -5,7 +5,12 @@ This repository helps me learning to code with symfony. Buy the book ("Symfony 5
 
 ## Usefull commands
 ### Local web server
-`symfony server:start -d`
+1. `symfony server:ca:install`
+1. `symfony server:start -d`
+
+*or:*
+
+`symfony server:start -d --no-tls`
 
 `symfony server:log`
 
@@ -23,3 +28,6 @@ This repository helps me learning to code with symfony. Buy the book ("Symfony 5
 
 ### Debugger
 `symfony console debug:router`
+
+### misc
+`symfony book:check-requirements`
