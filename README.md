@@ -27,17 +27,11 @@ This repository helps me learning to code with symfony. Buy the book ("Symfony 5
 `docker-compose logs`
 
 ### Doctrine
-Add an entity *Example* or add new fields to it:
+`symfony console make:entity Example` // Add an entity *Example* or add new fields to it.
 
-`symfony console make:entity Example`
+`symfony console make:migration` // Create a migration file to add the changes.
 
-Create a migration file to add the changes:
-
-`symfony console make:migration`
-
-Execute migration:
-
-`symfony console doctrine:migrations:migrate`
+`symfony console doctrine:migrations:migrate` // Execute migration.
 
 ### Debugger
 `symfony console debug:router`
