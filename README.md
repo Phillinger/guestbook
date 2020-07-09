@@ -33,6 +33,8 @@ This repository helps me learning to code with symfony. Buy the book ("Symfony 5
 
 `symfony console doctrine:migrations:migrate` // Execute migration.
 
+`symfony console doctrine:fixtures:load` // load fixtures
+
 ### Debugger
 `symfony console debug:router`
 
