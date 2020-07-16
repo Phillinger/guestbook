@@ -335,7 +335,7 @@
         "version": "v5.0.10"
     },
     "symfony/orm-pack": {
-        "version": "v1.0.8"
+        "version": "v2.0.0"
     },
     "symfony/phpunit-bridge": {
         "version": "4.3",
