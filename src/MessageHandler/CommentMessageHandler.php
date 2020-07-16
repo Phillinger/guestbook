@@ -33,6 +33,8 @@ class CommentMessageHandler implements MessageHandlerInterface
 			$comment->setState('published');
 		}
 
+		error_log();
+
 		$this->entityManager->flush();
 	}
 }
