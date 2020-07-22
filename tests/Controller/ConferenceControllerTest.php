@@ -25,18 +25,19 @@ class ConferenceControllerTest extends WebTestCase
 
 		$client->clickLink('View');
 
-//		$this->assertPageTitleContains('Amsterdam');
-//		$this->assertResponseIsSuccessful();
-//		$this->assertSelectorTextContains('h2', 'Amsterdam 2019');
-//		$this->assertSelectorExists('div:contains("There are 1 comments")');
+		$this->assertPageTitleContains('Amsterdam');
+		$this->assertResponseIsSuccessful();
+		$this->assertSelectorTextContains('h2', 'Amsterdam 2019');
+		$this->assertSelectorExists('div:contains("There are 1 comment(s).")');
 	}
 
 	public function testCommentSubmission()
 	{
 		$client = static::createClient();
 		$client->request('GET', '/conference/amsterdam-2019');
-		/*		
+
 		$this->assertResponseIsSuccessful();
+
 		$client->submitForm('Submit', [
 			'comment_form[author]' => 'Fabien',
 			'comment_form[text]' => 'Some feedback from an automated functional test.',
@@ -47,13 +48,14 @@ class ConferenceControllerTest extends WebTestCase
 
 		$this->assertResponseRedirects();
 
+		/*
 		// simulate comment validation
 		$comment = self::$container->get(CommentRepository::class)->findOneByEmail($email);
-		$comment->setState('published);
+		$comment->setState('published');
 		self::$container->get(EntityManagerInterface::class)->flush();
-
-		$client->followRedirect();
-		$this->assertSelectorExists('div:contains("There are 2 comments")');
+		
+				$client->followRedirect();
+				$this->assertSelectorExists('div:contains("There are 2 comment(s)")');
 		*/
 	}
 }
